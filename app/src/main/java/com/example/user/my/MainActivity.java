@@ -2,6 +2,7 @@ package com.example.user.my;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.provider.Settings;
 import android.view.View;
 
 import android.view.Menu;
@@ -16,6 +17,8 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        init();
 
 
 
@@ -78,4 +81,10 @@ public class MainActivity extends Activity {
 //        drawer.closeDrawer(GravityCompat.START);
 //        return true;
     }
+
+    private void init() {
+
+        System.out.print("上传");
+    }
+
 }
